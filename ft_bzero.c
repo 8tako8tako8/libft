@@ -6,7 +6,7 @@
 /*   By: kmorimot <kmorimot@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/11 20:36:30 by kmorimot          #+#    #+#             */
-/*   Updated: 2020/10/11 20:38:41 by kmorimot         ###   ########.fr       */
+/*   Updated: 2020/10/13 13:43:51 by kmorimot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,5 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	unsigned long	i;
-	char			*buf;
-
-	i = 0;
-	buf = (char *)s;
-	while (i < n)
-	{
-		buf[i] = 0;
-		i++;
-	}
+	ft_memset(s, 0, n);
 }

@@ -6,7 +6,7 @@
 /*   By: kmorimot <kmorimot@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/11 20:47:47 by kmorimot          #+#    #+#             */
-/*   Updated: 2020/10/11 20:48:22 by kmorimot         ###   ########.fr       */
+/*   Updated: 2020/10/14 00:14:31 by kmorimot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,10 @@ size_t		ft_strlcat(char *dst, const char *src, size_t dstsize)
 	size_t	len;
 
 	i = 0;
-	j = 0;
 	while (dst[i] != '\0')
 		i++;
 	len = i;
+	j = 0;
 	while (i + 1 < dstsize && src[j] != '\0')
 	{
 		dst[i] = src[j];
