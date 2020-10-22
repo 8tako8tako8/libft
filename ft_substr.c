@@ -6,7 +6,7 @@
 /*   By: kmorimot <kmorimot@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/11 22:00:04 by kmorimot          #+#    #+#             */
-/*   Updated: 2020/10/14 01:32:05 by kmorimot         ###   ########.fr       */
+/*   Updated: 2020/10/21 22:52:55 by kmorimot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char			*str;
 	unsigned int	max_start;
 
+	if (!s)
+		return (NULL);
 	str = (char *)malloc(sizeof(char) * (len + 1));
 	if (str == NULL)
 		return (NULL);
@@ -28,7 +30,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (str);
 	}
 	i = 0;
-	while (i < len)
+	while (i < len && s[start + i] != '\0')
 	{
 		str[i] = s[start + i];
 		i++;

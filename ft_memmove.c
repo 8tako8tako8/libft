@@ -6,7 +6,7 @@
 /*   By: kmorimot <kmorimot@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/11 20:40:17 by kmorimot          #+#    #+#             */
-/*   Updated: 2020/10/13 10:59:25 by kmorimot         ###   ########.fr       */
+/*   Updated: 2020/10/17 14:50:22 by kmorimot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,16 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	size_t		i;
-	char		*dst1;
-	const char	*src1;
+	size_t					i;
+	unsigned char			*dst1;
+	const unsigned char		*src1;
 
 	if (dst == NULL && src == NULL)
 		return (NULL);
 	if (dst <= src)
 		return (ft_memcpy(dst, src, len));
-	dst1 = (char *)dst;
-	src1 = (const char *)src;
+	dst1 = (unsigned char *)dst;
+	src1 = (const unsigned char *)src;
 	i = len;
 	while (i > 0)
 	{

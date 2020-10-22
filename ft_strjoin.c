@@ -6,7 +6,7 @@
 /*   By: kmorimot <kmorimot@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/11 21:46:49 by kmorimot          #+#    #+#             */
-/*   Updated: 2020/10/11 21:58:21 by kmorimot         ###   ########.fr       */
+/*   Updated: 2020/10/21 22:51:14 by kmorimot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		len2;
 	char	*str;
 
+	if (!s1 || !s2)
+		return (NULL);
 	str = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
 	if (str == NULL)
 		return (NULL);

@@ -6,7 +6,7 @@
 /*   By: kmorimot <kmorimot@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/11 23:13:26 by kmorimot          #+#    #+#             */
-/*   Updated: 2020/10/11 23:14:24 by kmorimot         ###   ########.fr       */
+/*   Updated: 2020/10/15 21:03:25 by kmorimot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list		*elem;
 	t_list		*new_lst;
 
+	if (!lst || !f)
+		return (NULL);
 	new_lst = NULL;
 	while (lst != NULL)
 	{
