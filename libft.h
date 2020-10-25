@@ -6,7 +6,7 @@
 /*   By: kmorimot <kmorimot@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/11 23:40:51 by kmorimot          #+#    #+#             */
-/*   Updated: 2020/10/12 16:18:15 by kmorimot         ###   ########.fr       */
+/*   Updated: 2020/10/23 22:45:15 by kmorimot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdint.h>
 
 typedef struct	s_list
 {
